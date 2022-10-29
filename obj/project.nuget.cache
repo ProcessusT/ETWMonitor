@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "x2WLHt9ncEg6bjz9i4U8cex9YL+pknhGwkB/N3g8gjxnz0bSm4MniBFEVyoJ4DTknAIzj5mW7ELP26CwvKrg7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Nobody\\OneDrive - GROUPE ISAGRI\\Projet-ETWMonitor\\ETWMonitor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nobody\\.nuget\\packages\\microsoft.diagnostics.tracing.traceevent\\3.0.5\\microsoft.diagnostics.tracing.traceevent.3.0.5.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\microsoft.toolkit.uwp.notifications\\7.1.2\\microsoft.toolkit.uwp.notifications.7.1.2.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\Nobody\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.17763.25\\microsoft.windows.sdk.net.ref.10.0.17763.25.nupkg.sha512"
+  ],
+  "logs": []
+}

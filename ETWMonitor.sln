@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETWMonitor", "ETWMonitor.csproj", "{2B1E948E-4150-4152-BC4B-D0AD90A6BD1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B1E948E-4150-4152-BC4B-D0AD90A6BD1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B1E948E-4150-4152-BC4B-D0AD90A6BD1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B1E948E-4150-4152-BC4B-D0AD90A6BD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B1E948E-4150-4152-BC4B-D0AD90A6BD1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92ECF607-B10B-4EFF-B8F0-E7FC7B00B964}
+	EndGlobalSection
+EndGlobal
