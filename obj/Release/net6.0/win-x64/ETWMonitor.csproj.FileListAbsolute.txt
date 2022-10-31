@@ -1,0 +1,5 @@
+C:\Users\Processus\Documents\GitHub\ETWMonitor\obj\Release\net6.0\win-x64\ETWMonitor.csproj.AssemblyReference.cache
+C:\Users\Processus\Documents\GitHub\ETWMonitor\obj\Release\net6.0\win-x64\ETWMonitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Processus\Documents\GitHub\ETWMonitor\obj\Release\net6.0\win-x64\ETWMonitor.AssemblyInfoInputs.cache
+C:\Users\Processus\Documents\GitHub\ETWMonitor\obj\Release\net6.0\win-x64\ETWMonitor.AssemblyInfo.cs
+C:\Users\Processus\Documents\GitHub\ETWMonitor\obj\Release\net6.0\win-x64\ETWMonitor.csproj.CoreCompileInputs.cache

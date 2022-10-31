@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nobody\\OneDrive - GROUPE ISAGRI\\Projet-ETWMonitor\\ETWMonitor.csproj": {}
+    "C:\\Users\\Processus\\Documents\\GitHub\\ETWMonitor\\ETWMonitor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nobody\\OneDrive - GROUPE ISAGRI\\Projet-ETWMonitor\\ETWMonitor.csproj": {
+    "C:\\Users\\Processus\\Documents\\GitHub\\ETWMonitor\\ETWMonitor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nobody\\OneDrive - GROUPE ISAGRI\\Projet-ETWMonitor\\ETWMonitor.csproj",
+        "projectUniqueName": "C:\\Users\\Processus\\Documents\\GitHub\\ETWMonitor\\ETWMonitor.csproj",
         "projectName": "ETWMonitor",
-        "projectPath": "C:\\Users\\Nobody\\OneDrive - GROUPE ISAGRI\\Projet-ETWMonitor\\ETWMonitor.csproj",
-        "packagesPath": "C:\\Users\\Nobody\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nobody\\OneDrive - GROUPE ISAGRI\\Projet-ETWMonitor\\obj\\",
+        "projectPath": "C:\\Users\\Processus\\Documents\\GitHub\\ETWMonitor\\ETWMonitor.csproj",
+        "packagesPath": "C:\\Users\\Processus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Processus\\Documents\\GitHub\\ETWMonitor\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nobody\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Processus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,6 +47,10 @@
             "Microsoft.Toolkit.Uwp.Notifications": {
               "target": "Package",
               "version": "[7.1.2, )"
+            },
+            "System.ServiceProcess.ServiceController": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -61,8 +65,24 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+              "version": "[6.0.10, 6.0.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
+              "version": "[6.0.10, 6.0.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x64",
+              "version": "[6.0.10, 6.0.10]"
+            },
+            {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.17763.25, 10.0.17763.25]"
+              "version": "[10.0.17763.27, 10.0.17763.27]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+              "version": "[6.0.10, 6.0.10]"
             }
           ],
           "frameworkReferences": {
@@ -71,9 +91,17 @@
             },
             "Microsoft.Windows.SDK.NET.Ref": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.305\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
         }
       }
     }
