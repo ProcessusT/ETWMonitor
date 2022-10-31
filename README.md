@@ -19,7 +19,7 @@
 ## Changelog
 <br />
 On last version (V 1.1) :<br />
-- Detect and notify WinRM connections
+- Detect and notify WinRM connections<br />
 - System tray icon when running
 <br /><br />
 V 1.0 :<br />
