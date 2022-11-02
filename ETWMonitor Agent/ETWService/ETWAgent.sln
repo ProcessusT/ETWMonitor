@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETWAgent", "ETWAgent.csproj", "{14030926-E225-4E15-9EEB-04D4FB7E35F6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ETWServiceSetup", "..\ETWServiceSetup\ETWServiceSetup\ETWServiceSetup.vdproj", "{69B7E873-D9B3-447B-8B48-07819FE873A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14030926-E225-4E15-9EEB-04D4FB7E35F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14030926-E225-4E15-9EEB-04D4FB7E35F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14030926-E225-4E15-9EEB-04D4FB7E35F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14030926-E225-4E15-9EEB-04D4FB7E35F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B7E873-D9B3-447B-8B48-07819FE873A0}.Debug|Any CPU.ActiveCfg = Debug
+		{69B7E873-D9B3-447B-8B48-07819FE873A0}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC3CFF19-E2E5-42C0-A94F-372E27FC1008}
+	EndGlobalSection
+EndGlobal
