@@ -44,5 +44,5 @@ Compile with Visual Studio 2022 and launch ETWMonitor.exe as Administrator.
 ## Future improvements
 
 <br />
-- Include more protocols detections
+- Include more protocols detections<br />
 - Build a Client-Server version with Agents and a collector server
