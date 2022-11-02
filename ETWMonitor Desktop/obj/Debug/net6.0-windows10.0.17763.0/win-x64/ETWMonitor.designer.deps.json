@@ -1,0 +1,197 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Microsoft.Diagnostics.Tracing.TraceEvent/3.0.5": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Dia2Lib.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Microsoft.Diagnostics.FastSerialization.dll": {
+            "assemblyVersion": "3.0.5.0",
+            "fileVersion": "3.0.5.0"
+          },
+          "lib/netstandard2.0/Microsoft.Diagnostics.Tracing.TraceEvent.dll": {
+            "assemblyVersion": "3.0.5.0",
+            "fileVersion": "3.0.5.0"
+          },
+          "lib/netstandard2.0/OSExtensions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/TraceReloggerLib.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.1.0": {},
+      "Microsoft.Toolkit.Uwp.Notifications/7.1.2": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Drawing.Common": "4.7.0",
+          "System.Reflection.Emit": "4.7.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.17763/Microsoft.Toolkit.Uwp.Notifications.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.2.1"
+          }
+        }
+      },
+      "Microsoft.Win32.Registry/4.7.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "runtime": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assemblyVersion": "4.1.3.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.SystemEvents": "4.7.0"
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "System.Reflection.Emit/4.7.0": {},
+      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.Security.AccessControl/4.7.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        },
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
+            "assemblyVersion": "4.1.3.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "System.Security.Principal.Windows/4.7.0": {
+        "runtime": {
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
+            "assemblyVersion": "4.1.3.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "System.ValueTuple/4.5.0": {}
+    }
+  },
+  "libraries": {
+    "Microsoft.Diagnostics.Tracing.TraceEvent/3.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lq3Ka7gg2JDIKpzaOlLNvyb+Tzsznyi6boeUqitw9apNYnhFdUFwYxjMCFMb8ydWNEzY/5EYdTsHijxgTgrVqw==",
+      "path": "microsoft.diagnostics.tracing.traceevent/3.0.5",
+      "hashPath": "microsoft.diagnostics.tracing.traceevent.3.0.5.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
+    },
+    "Microsoft.Toolkit.Uwp.Notifications/7.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cVBRDG8g0K4sBRHFJoNQjwZduDUz+cXP33erIQjAa8fGKF4DsWIuOAQCYGFoXpdXIXjxoaUYuGSxAG6QCvOdtQ==",
+      "path": "microsoft.toolkit.uwp.notifications/7.1.2",
+      "hashPath": "microsoft.toolkit.uwp.notifications.7.1.2.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
+      "path": "microsoft.win32.registry/4.7.0",
+      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
+      "path": "microsoft.win32.systemevents/4.7.0",
+      "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "path": "system.drawing.common/4.7.0",
+      "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "path": "system.reflection.emit/4.7.0",
+      "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    },
+    "System.Security.AccessControl/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "path": "system.security.accesscontrol/4.7.0",
+      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "path": "system.security.principal.windows/4.7.0",
+      "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    }
+  }
+}

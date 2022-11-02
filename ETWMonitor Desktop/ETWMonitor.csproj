@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
+	  <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+	<PublishReadyToRun>true</PublishReadyToRun>
+	<OutputType>WinExe</OutputType>
+	<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
+	<SelfContained>true</SelfContained>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<UseWindowsForms>True</UseWindowsForms>
+	<PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Diagnostics.Tracing.TraceEvent" Version="3.0.5" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.2" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

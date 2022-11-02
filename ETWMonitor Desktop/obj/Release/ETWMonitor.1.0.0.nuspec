@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ETWMonitor</id>
+    <version>1.0.0</version>
+    <authors>ETWMonitor</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows10.0.17763">
+        <dependency id="Microsoft.Diagnostics.Tracing.TraceEvent" version="3.0.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Toolkit.Uwp.Notifications" version="7.1.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net6.0-windows10.0.17763/icon.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\Nobody\OneDrive - GROUPE ISAGRI\Projet-ETWMonitor\bin\Release\net6.0-windows10.0.17763.0\ETWMonitor.runtimeconfig.json" target="lib\net6.0-windows10.0.17763\ETWMonitor.runtimeconfig.json" />
+    <file src="C:\Users\Nobody\OneDrive - GROUPE ISAGRI\Projet-ETWMonitor\bin\Release\net6.0-windows10.0.17763.0\ETWMonitor.dll" target="lib\net6.0-windows10.0.17763\ETWMonitor.dll" />
+    <file src="C:\Users\Nobody\OneDrive - GROUPE ISAGRI\Projet-ETWMonitor\icon.ico" target="content\icon.ico" />
+    <file src="C:\Users\Nobody\OneDrive - GROUPE ISAGRI\Projet-ETWMonitor\icon.ico" target="contentFiles\any\net6.0-windows10.0.17763\icon.ico" />
+  </files>
+</package>
