@@ -44,7 +44,8 @@ ETWMonitor monitors events in real time to detect suspicious network connections
 
 ## Installation
 <br>
-- You can download latest compiled version from <a href="https://github.com/Processus-Thief/ETWMonitor/releases">Release page</a>
+- You can download latest compiled version from <a href="https://github.com/Processus-Thief/ETWMonitor/releases">Release page</a><br />
+Also see installations instructions here : <a href="https://github.com/Processus-Thief/ETWMonitor/blob/main/INSTALLATION%20-%20HOW%20TO.pdf">INSTALLATION HOW TO.pdf</a>
 <br><br>
 <br>
     
