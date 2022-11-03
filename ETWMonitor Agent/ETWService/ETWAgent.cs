@@ -26,25 +26,35 @@ namespace ETWService
 
         
 
-    public void Alert(string message)
+    public void Alert(string message, int level)
         {
             
-
-            var values = new Dictionary<string, string>
-            {
-                { "hostname", System.Convert.ToBase64String( System.Text.Encoding.UTF8.GetBytes(hostname) ) },
-                { "message", System.Convert.ToBase64String( System.Text.Encoding.UTF8.GetBytes(message) ) }
-            };
             try
             {
-                File.WriteAllText(directory + "\\ETW.log", directory);
-                string server_ip = "";
-                var content = new FormUrlEncodedContent(values);
-                foreach (string line in System.IO.File.ReadLines(directory + "\\server_ip.conf"))
+                string settings = "";
+                foreach (string line in System.IO.File.ReadLines(directory + "\\settings.conf"))
                 {
-                    server_ip += line;
+                    settings += line;
                 }
-                File.WriteAllText(directory + "\\ETW.log", server_ip);
+
+                int server_ip_index = settings.ToString().IndexOf("SERVER_IP=") + 10;
+                string server_ip = settings.ToString().Substring(server_ip_index);
+                int server_ip_end_index = server_ip.ToString().IndexOf(";");
+                server_ip = server_ip.ToString().Substring(0, server_ip_end_index).Trim();
+                
+                int token_index = settings.ToString().IndexOf("TOKEN=") + 6;
+                string token = settings.ToString().Substring(token_index);
+                int token_end_index = token.ToString().IndexOf(";");
+                token = token.ToString().Substring(0, token_end_index).Trim();
+
+                var values = new Dictionary<string, string>
+                {
+                    { "hostname", System.Convert.ToBase64String( System.Text.Encoding.UTF8.GetBytes(hostname) ) },
+                    { "message", System.Convert.ToBase64String( System.Text.Encoding.UTF8.GetBytes(message) ) },
+                    { "level", System.Convert.ToBase64String( System.Text.Encoding.UTF8.GetBytes(level.ToString()) ) },
+                    { "token", System.Convert.ToBase64String( System.Text.Encoding.UTF8.GetBytes(token) ) }
+                };
+                var content = new FormUrlEncodedContent(values);
                 var response = client.PostAsync("http://" + server_ip.Trim() + "/collector.php", content);
                 var responseString = response.Result.ToString();
             }
@@ -60,7 +70,7 @@ namespace ETWService
         public void Monitor()
         {
 
-            Alert("ETWMonitor was started !");
+            Alert("ETWMonitor was started !", 0);
 
             if (!(TraceEventSession.IsElevated() ?? false))
             {
@@ -104,7 +114,7 @@ namespace ETWService
                      */
                     if (data.ToString().ToLower().Contains("microsoft-windows-winrm") && data.ToString().ToLower().Contains("réponse HTTP 401 au client et déconnexion de la connexion"))
                     {   // Tentative de connexion WinRM
-                        Alert("Tentative de connexion WinRM détectée");
+                        Alert("Tentative de connexion WinRM détectée", 3);
                     }
                     if (data.ToString().ToLower().Contains("microsoft-windows-winrm") && data.ToString().ToLower().Contains("création") && data.ToString().ToLower().Contains("interpréteur de commande wsman sur le serveur"))
                     {   // Connexion WinRM réussie
@@ -119,7 +129,7 @@ namespace ETWService
                         int username_length = sub_username.ToString().IndexOf(" ");
                         sub_username = sub_username.ToString().Substring(0, username_length).Trim();
 
-                        Alert("Connexion WinRM active en cours\nDepuis : " + ip_source + "\nUsername: " + sub_username);
+                        Alert("Active WinRM connection detected\nFrom : " + ip_source + "\nUsername: " + sub_username, 5);
 
                     }
 
@@ -132,27 +142,27 @@ namespace ETWService
                     if (data.ToString().ToLower().Contains("smb2requesttreeconnect") && data.ToString().ToLower().Contains("ipc$"))
                     {   // Tentative de connexion RPC
 
-                        Alert("Tentative d'énumération RPC détectée");
+                        Alert("RPC enumeration attempt detected", 2);
                     }
                     if (data.ToString().ToLower().Contains("smb2requestcreate") && data.ToString().ToLower().Contains("lsarpc"))
                     {   // Connexion RPC au processus LSA
 
-                        Alert("Connexion RPC au processus LSA");
+                        Alert("RPC connection to LSA process", 5);
                     }
                     if (data.ToString().ToLower().Contains("smb2requestcreate") && data.ToString().ToLower().Contains("svcctl"))
                     {   // Connexion RPC au gestionnaire de service
 
-                        Alert("Connexion RPC au gestionnaire de services\nPotentielle attaque PSEXEC détectée");
+                        Alert("RPC connection to service manager\nPotential PSEXEC attack detected", 5);
                     }
                     if (data.ToString().ToLower().Contains("smb2requestcreate") && data.ToString().ToLower().Contains("atsvc"))
                     {   // Connexion RPC au gestionnaire de service
 
-                        Alert("Connexion RPC au gestionnaire de tâches planifiées\nPotentielle attaque ATEXEC détectée");
+                        Alert("RPC connection to scheduled task manager\nPotential ATEXEC attack detected", 5);
                     }
                     if (data.ToString().ToLower().Contains("smb2requestcreate") && data.ToString().ToLower().Contains("spoolss"))
                     {   // Connexion RPC au spouleur d'impressions
 
-                        Alert("Connexion RPC au spouleur d'impressions");
+                        Alert("RPC connection to print spooler", 5);
                     }
 
 
@@ -169,7 +179,7 @@ namespace ETWService
                         int client_name_length = ip_source.ToString().IndexOf(":");
                         ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
 
-                        Alert("Tentative de connexion RDP détectée\nSource : " + ip_source);
+                        Alert("RDP connection attempt detected\nFrom : " + ip_source, 3);
 
 
                     }
@@ -189,7 +199,7 @@ namespace ETWService
                         int client_name_length = ip_source.ToString().IndexOf(":");
                         ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
 
-                        Alert("Tentative de connexion SMB détectée\nSource : " + ip_source);
+                        Alert("SMB connection attempt detected\nFrom : " + ip_source, 3);
 
                     }
                     if (data.ToString().ToLower().Contains("smb2sessionauthenticated"))
@@ -201,7 +211,7 @@ namespace ETWService
                         int client_name_length = ip_source.ToString().IndexOf("\"");
                         ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
 
-                        Alert("Connexion SMB active en cours\nUsername : " + ip_source);
+                        Alert("Active SMB connection detected\nUsername : " + ip_source, 5);
 
                     }
 
