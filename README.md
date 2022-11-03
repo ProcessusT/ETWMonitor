@@ -11,8 +11,10 @@
 <br />
 <br>
 <div align="center">
+  Server monitoring screen :<br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server.PNG" width="80%;">
-<br />
+<br /><br />
+  Client Toast notification in Desktop version :<br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/Connexion_SMB.PNG" width="80%;">
 </div>
 <br>
@@ -26,6 +28,7 @@ On last version (V 2.0) :<br />
 <br />
 V 1.1 :<br />
 - Detect and notify WinRM connections<br />
+<br />
 V 1.0 :<br />
 - Detect and notify RDP, SMB and RPC connections<br />
 
@@ -48,5 +51,5 @@ ETWMonitor monitors events in real time to detect suspicious network connections
 ## Future improvements
 
 <br />
-- Include more protocols detections
+- Include more protocols detections<br />
 - Build a Client-Server version with Agents and a collector server (⭐ DONE !!!)
