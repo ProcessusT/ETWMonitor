@@ -68,7 +68,8 @@
         try{
             $hostname = preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',base64_decode($_POST['hostname']));
             $details = preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['details']);
-            $stmt = $db->prepare('SELECT hostname, details FROM host where hostname="'.$hostname.'"');
+            $stmt = $db->prepare('SELECT hostname, details FROM host where hostname=:hostname');
+            $stmt->bindParam(':hostname', $hostname);
             $stmt->execute(); 
             $req = $stmt->fetch();
             if(isset($req['details'])){
@@ -96,10 +97,10 @@
         while($req = $stmt->fetch()){
             echo'
                 <form action="hosts_details.php" method="POST">
-                    <div style="font-weight:bold;">'.$req['hostname'].'</div>
+                    <div style="font-weight:bold;">'.htmlentities($req['hostname']).'</div>
                     Details :<br />
                     <input type="hidden" name="hostname" value="'.base64_encode($req['hostname']).'">
-                    <textarea name="details" rows="5" cols="33">'.$req['details'].'</textarea>
+                    <textarea name="details" rows="5" cols="33">'.htmlentities($req['details']).'</textarea>
                     <br />
                     <input type="submit" value="Save changes">
                 </form><br /><br /><br />

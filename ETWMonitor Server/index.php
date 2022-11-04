@@ -95,13 +95,13 @@
                                         $stmt->execute(); 
 
                                         while($req = $stmt->fetch()) {
-                                            $event = preg_replace("/[\n\r]/", "<br />", $req['event']);
+                                            $event = preg_replace("/[\n\r]/", "<br />", htmlentities($req['event']));
                                             echo '<tr>
-                                                <td>'.$req['hostname'].'</td>
+                                                <td>'.htmlentities($req['hostname']).'</td>
                                                 <td>'.$req['timedate'].'</td>
                                                 <td>'.$event.'</td>
-                                                <td>'.$req['level'].'</td>
-                                                <td>'.$req['details'].'</td>
+                                                <td>'.htmlentities($req['level']).'</td>
+                                                <td>'.htmlentities($req['details']).'</td>
                                             </tr>';
                                         }
                                     ?>
