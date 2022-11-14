@@ -22,7 +22,11 @@
 
 ## Changelog
 <br />
-On last version (V 2.0) :<br />
+On last version (V 2.1) :<br />
+- Client updates detection rules defined in a server XML file automatically<br />
+- No more compilation required for new rules creation<br />
+<br />
+V 2.0 :<br />
 - Client-server support<br />
 - Client agent launched on startup as Windows service<br />
 <br />
@@ -53,4 +57,14 @@ Also see installations instructions here : <a href="https://github.com/Processus
 
 <br />
 - Include more protocols detections<br />
-- Build a Client-Server version with Agents and a collector server (⭐ DONE !!!)
+- Make statistics work in server dashboard<br />
+- Build a Client-Server version with Agents and a collector server (⭐ DONE !!!)<br />
+- Client updates detection rules defined on server side (⭐ DONE !!!)<br />
+<br /><br />
+
+## Maintainability
+<br />
+Desktop version is no more maintained.<br />
+Only client-version will be maintained to get faster updates.<br />
+You can still add Agent version updates to Desktop version manually if needed.<br />
+<br />
