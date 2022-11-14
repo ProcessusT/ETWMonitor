@@ -15,13 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_024F5036545F481EABF33B5976D5E4A2"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_043CC77B3C464787B017D3587DAF81AF"
+        "MsmKey" = "8:_00A00E68013441068615F4E4B8D56302"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,6 +28,12 @@
         "Entry"
         {
         "MsmKey" = "8:_0881EB22826046B8AB414EBF41056851"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0B77FFA91417413797FFA7E74C3DE74D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -64,31 +64,31 @@
         "Entry"
         {
         "MsmKey" = "8:_1685BA24CF7201EA296EDE25EE5E30DD"
+        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1685BA24CF7201EA296EDE25EE5E30DD"
+        "OwnerKey" = "8:_BD957681B322440E8807BAFF36D2760E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1685BA24CF7201EA296EDE25EE5E30DD"
+        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1685BA24CF7201EA296EDE25EE5E30DD"
         "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_1685BA24CF7201EA296EDE25EE5E30DD"
-        "OwnerKey" = "8:_BD957681B322440E8807BAFF36D2760E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1685BA24CF7201EA296EDE25EE5E30DD"
-        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1685BA24CF7201EA296EDE25EE5E30DD"
-        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_17242F739B8535AB7564C747B548B0CD"
-        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
+        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -100,7 +100,7 @@
         "Entry"
         {
         "MsmKey" = "8:_17242F739B8535AB7564C747B548B0CD"
-        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
+        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -112,12 +112,6 @@
         "Entry"
         {
         "MsmKey" = "8:_1830B41C078D45FA94EC9598BF794140"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1B972D81B9464E19821AB4374E338338"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -141,26 +135,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_24C9C79FA45D4E898802E44B827E21FD"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_2507777785664574B6D3DB1CEFD9F947"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2663F224B92A3CFF7F4E8991252EFDCE"
-        "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_2663F224B92A3CFF7F4E8991252EFDCE"
-        "OwnerKey" = "8:_BD957681B322440E8807BAFF36D2760E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -172,18 +148,24 @@
         "Entry"
         {
         "MsmKey" = "8:_2663F224B92A3CFF7F4E8991252EFDCE"
+        "OwnerKey" = "8:_BD957681B322440E8807BAFF36D2760E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2663F224B92A3CFF7F4E8991252EFDCE"
         "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_2A0224986C62487A9ECDE80A05657C1D"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_2663F224B92A3CFF7F4E8991252EFDCE"
+        "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_2B2CF597935748068BF8D8C35DC204B9"
+        "MsmKey" = "8:_2A0224986C62487A9ECDE80A05657C1D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -202,7 +184,7 @@
         "Entry"
         {
         "MsmKey" = "8:_2C5A1FAE8B2895D0208A53193ACFA93E"
-        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
+        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -214,7 +196,7 @@
         "Entry"
         {
         "MsmKey" = "8:_2C5A1FAE8B2895D0208A53193ACFA93E"
-        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
+        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -225,14 +207,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_2DC6AF6013B849F18592592891E480A2"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_326BA3C50A775BBBA256C1E6CB64392B"
-        "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
+        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -244,19 +220,13 @@
         "Entry"
         {
         "MsmKey" = "8:_326BA3C50A775BBBA256C1E6CB64392B"
-        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_326BA3C50A775BBBA256C1E6CB64392B"
         "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_329D61C742EF4474932C16A603D1D88E"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_326BA3C50A775BBBA256C1E6CB64392B"
+        "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -273,7 +243,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_41E7A4C2EEFE4A829958B6245230D30D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_450819C1DD3F484196C21103D5B8291E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_56B73C43E9734FDDB884D5837F1C575C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_591B09EFA2114971A4460B301459182F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -298,7 +286,7 @@
         "Entry"
         {
         "MsmKey" = "8:_629416452A88AADBEA5A661611963345"
-        "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
+        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -310,13 +298,13 @@
         "Entry"
         {
         "MsmKey" = "8:_629416452A88AADBEA5A661611963345"
-        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
+        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_629416452A88AADBEA5A661611963345"
-        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
+        "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -351,7 +339,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7339AF1F890E4158810E823692FCAFAC"
+        "MsmKey" = "8:_70CE87C8A9964895911C36C85BEBA9C8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -363,25 +351,19 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_77529B5DE63747548370A9B7F14A531D"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_7C02C33B8C2E4A4093F42C0FAAE41C59"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_815827C0B99F4B8B80CE3C2DDAFC5104"
+        "MsmKey" = "8:_7D9ECA937CB34A2EAED63D4644DC4E62"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_8837AF99204F41A192217A0674FB83E5"
+        "MsmKey" = "8:_815827C0B99F4B8B80CE3C2DDAFC5104"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -406,7 +388,7 @@
         "Entry"
         {
         "MsmKey" = "8:_89AFE66040ABE2D88EF75F6972A33940"
-        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
+        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -418,7 +400,7 @@
         "Entry"
         {
         "MsmKey" = "8:_89AFE66040ABE2D88EF75F6972A33940"
-        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
+        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -429,7 +411,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_8E8AB76BAF7D4F5A8416D22ED00F8964"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8F2D60B300474B3CB982AD20E802B086"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_95EC5043D5544477B00530FDF113791B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_96E33C4C181746C2A8BE53A68C092495"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -447,18 +447,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_9A75EDBDA86A460CA3FC524D2C4D7BE0"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9BAB2303105A46148DB3D1494FB7B132"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_A24F6F4A2DD64A44B3A531434B7AF9AA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -471,6 +459,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_AF951F7F564D44EE9FFCDB611582B4A5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B073059820F04C5394DA686E36C41F78"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -478,6 +472,12 @@
         "Entry"
         {
         "MsmKey" = "8:_B541946612D44A55A12E63A8FFC71E13"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B593EE39BF67410989CA5BF0CB7714C8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -508,7 +508,7 @@
         "Entry"
         {
         "MsmKey" = "8:_CC85BCD06A8F2D07CCFF811DF6181347"
-        "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
+        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -520,13 +520,19 @@
         "Entry"
         {
         "MsmKey" = "8:_CC85BCD06A8F2D07CCFF811DF6181347"
-        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
+        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_CC85BCD06A8F2D07CCFF811DF6181347"
-        "OwnerKey" = "8:_5F04B81548E04794A8AB446DE97F054C"
+        "OwnerKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CCD78098E1FA4A4385A01283A9180AF8"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -561,6 +567,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_DA23CC52D47C479C91BA6ACFBC7F5A52"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_DA76B516F58944B48793D27F1D663E9F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -585,140 +597,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0F97AC4BC3F3405A8F234A489D413682"
+        "MsmKey" = "8:_FD0D8C32B5E440969D7241F1B2253ED2"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5E1A21B89FEE490BBA425E7B96F229E4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_E9B6808C9A6B455DA29A21373B619D73"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BFD773662BFE47319E0E1CF01B8A3823"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_37E4572925704160940F30714704556B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A24F6F4A2DD64A44B3A531434B7AF9AA"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5E22F5FF9A0041489C467B01ED0B52D7"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_14F62F71EAB74B64936572CF2AC893D4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B541946612D44A55A12E63A8FFC71E13"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_407F5A2CC46F4D4188EA85B12D0B8C48"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BD957681B322440E8807BAFF36D2760E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_8907B4AE31444C598D55C45E59DAD700"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_6E0FD1BA1509424AB32C887CC3845BC4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D7D6CD224B7C4C48AD3F4C0196CA4A0D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7429F4C5FA5D4AE995C57F8C91310DBC"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_686F76FDCC064501B82AA219DD74B0C8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2507777785664574B6D3DB1CEFD9F947"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C76EB45D2B1445DBB86F984EC8C76F5E"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0F715A2FBC6547DD904F5E94A2FB1636"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_88389B8F292D43C488DA24CB00BFC6F9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D4596A4151A848CDBBAD98E87DF6D2AD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2428DDAA05504DE6B735C4217A993738"
+        "OwnerKey" = "8:_629416452A88AADBEA5A661611963345"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -730,7 +616,55 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_E9B6808C9A6B455DA29A21373B619D73"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D7D6CD224B7C4C48AD3F4C0196CA4A0D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D4596A4151A848CDBBAD98E87DF6D2AD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C76EB45D2B1445DBB86F984EC8C76F5E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BFD773662BFE47319E0E1CF01B8A3823"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BD957681B322440E8807BAFF36D2760E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_B541946612D44A55A12E63A8FFC71E13"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_ADBE56E8BD004DD28AC985B49F94746D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A24F6F4A2DD64A44B3A531434B7AF9AA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -742,7 +676,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_89AFE66040ABE2D88EF75F6972A33940"
+        "OwnerKey" = "8:_8907B4AE31444C598D55C45E59DAD700"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_88389B8F292D43C488DA24CB00BFC6F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7429F4C5FA5D4AE995C57F8C91310DBC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6E0FD1BA1509424AB32C887CC3845BC4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_686F76FDCC064501B82AA219DD74B0C8"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -754,19 +712,49 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5E22F5FF9A0041489C467B01ED0B52D7"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5E1A21B89FEE490BBA425E7B96F229E4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_407F5A2CC46F4D4188EA85B12D0B8C48"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_37E4572925704160940F30714704556B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_2CD2D3F861C94BBAACF7182E483D027C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2C5A1FAE8B2895D0208A53193ACFA93E"
+        "OwnerKey" = "8:_2A0224986C62487A9ECDE80A05657C1D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2A0224986C62487A9ECDE80A05657C1D"
+        "OwnerKey" = "8:_2507777785664574B6D3DB1CEFD9F947"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2428DDAA05504DE6B735C4217A993738"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -796,6 +784,54 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_14F62F71EAB74B64936572CF2AC893D4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0F97AC4BC3F3405A8F234A489D413682"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0F715A2FBC6547DD904F5E94A2FB1636"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0881EB22826046B8AB414EBF41056851"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_071880303545488793198309D802F9BD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_17242F739B8535AB7564C747B548B0CD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_89AFE66040ABE2D88EF75F6972A33940"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2C5A1FAE8B2895D0208A53193ACFA93E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_2663F224B92A3CFF7F4E8991252EFDCE"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -815,24 +851,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_326BA3C50A775BBBA256C1E6CB64392B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_629416452A88AADBEA5A661611963345"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_17242F739B8535AB7564C747B548B0CD"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0881EB22826046B8AB414EBF41056851"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -860,6 +878,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -899,17 +925,17 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_6713E93428A34A908A1A6DBF7F31BA1F"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_6CF508590DE949B99F9D43D9EC7F0C75"
             {
             "Name" = "8:service_install.exe"
             "Condition" = "8:"
-            "Object" = "8:_2B2CF597935748068BF8D8C35DC204B9"
+            "Object" = "8:_95EC5043D5544477B00530FDF113791B"
             "FileType" = "3:2"
             "InstallAction" = "3:2"
             "Arguments" = "8:/Commit"
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_62E02290_FA20_49F7_B4AC_E22B2BCD0DE6"
+            "Identifier" = "8:_CE22B2D8_6D6D_4DAB_A8DE_C53C91CBCE01"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
@@ -936,30 +962,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_024F5036545F481EABF33B5976D5E4A2"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_00A00E68013441068615F4E4B8D56302"
             {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\System.Security.AccessControl.xml"
-            "TargetName" = "8:System.Security.AccessControl.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_043CC77B3C464787B017D3587DAF81AF"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.exe.config"
-            "TargetName" = "8:ETWService.exe.config"
+            "SourcePath" = "8:..\\..\\ETWService\\App.config"
+            "TargetName" = "8:App.config"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -1022,6 +1028,26 @@
                 }
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\System.Security.Permissions.dll"
             "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0B77FFA91417413797FFA7E74C3DE74D"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\ETWAgent.csproj"
+            "TargetName" = "8:ETWAgent.csproj"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -1244,26 +1270,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1B972D81B9464E19821AB4374E338338"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\System.Configuration.ConfigurationManager.xml"
-            "TargetName" = "8:System.Configuration.ConfigurationManager.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1CDF08FB8335468EB1E4A713B5B8DE0A"
             {
             "AssemblyRegister" = "3:1"
@@ -1341,26 +1347,6 @@
                 }
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.exe"
             "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_24C9C79FA45D4E898802E44B827E21FD"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\System.Security.Permissions.xml"
-            "TargetName" = "8:System.Security.Permissions.xml"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -1470,26 +1456,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2B2CF597935748068BF8D8C35DC204B9"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\service_install.exe"
-            "TargetName" = "8:service_install.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2C5A1FAE8B2895D0208A53193ACFA93E"
             {
             "AssemblyRegister" = "3:1"
@@ -1552,26 +1518,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2DC6AF6013B849F18592592891E480A2"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\System.Security.Principal.Windows.xml"
-            "TargetName" = "8:System.Security.Principal.Windows.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_326BA3C50A775BBBA256C1E6CB64392B"
             {
             "AssemblyRegister" = "3:1"
@@ -1601,26 +1547,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_329D61C742EF4474932C16A603D1D88E"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\System.Runtime.CompilerServices.Unsafe.xml"
-            "TargetName" = "8:System.Runtime.CompilerServices.Unsafe.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_37E4572925704160940F30714704556B"
@@ -1685,10 +1611,70 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_41E7A4C2EEFE4A829958B6245230D30D"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\settings.conf"
+            "TargetName" = "8:settings.conf"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_450819C1DD3F484196C21103D5B8291E"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\ETWAgent.cs"
+            "TargetName" = "8:ETWAgent.cs"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_56B73C43E9734FDDB884D5837F1C575C"
             {
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\settings.conf"
             "TargetName" = "8:settings.conf"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_591B09EFA2114971A4460B301459182F"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\ETWAgent.Designer.cs"
+            "TargetName" = "8:ETWAgent.Designer.cs"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -1951,10 +1937,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7339AF1F890E4158810E823692FCAFAC"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_70CE87C8A9964895911C36C85BEBA9C8"
             {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.exe.manifest"
-            "TargetName" = "8:ETWService.exe.manifest"
+            "SourcePath" = "8:..\\..\\ETWService\\ETWAgent.resx"
+            "TargetName" = "8:ETWAgent.resx"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -2002,26 +1988,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_77529B5DE63747548370A9B7F14A531D"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\Microsoft.Diagnostics.Tracing.TraceEvent.xml"
-            "TargetName" = "8:Microsoft.Diagnostics.Tracing.TraceEvent.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7C02C33B8C2E4A4093F42C0FAAE41C59"
             {
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\x86\\msdia140.dll"
@@ -2042,12 +2008,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_815827C0B99F4B8B80CE3C2DDAFC5104"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7D9ECA937CB34A2EAED63D4644DC4E62"
             {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\amd64\\KernelTraceControl.dll"
-            "TargetName" = "8:KernelTraceControl.dll"
+            "SourcePath" = "8:..\\..\\ETWService\\ETWAgent.csproj.user"
+            "TargetName" = "8:ETWAgent.csproj.user"
             "Tag" = "8:"
-            "Folder" = "8:_FECD1CB430FC44A0A4D7924C9ADC2364"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2062,12 +2028,12 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8837AF99204F41A192217A0674FB83E5"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_815827C0B99F4B8B80CE3C2DDAFC5104"
             {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\Microsoft.Diagnostics.FastSerialization.xml"
-            "TargetName" = "8:Microsoft.Diagnostics.FastSerialization.xml"
+            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\amd64\\KernelTraceControl.dll"
+            "TargetName" = "8:KernelTraceControl.dll"
             "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Folder" = "8:_FECD1CB430FC44A0A4D7924C9ADC2364"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -2195,9 +2161,69 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8E8AB76BAF7D4F5A8416D22ED00F8964"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\ETWAgent.sln"
+            "TargetName" = "8:ETWAgent.sln"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8F2D60B300474B3CB982AD20E802B086"
             {
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\service.bat"
+            "TargetName" = "8:service.bat"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_95EC5043D5544477B00530FDF113791B"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\service_install.exe"
+            "TargetName" = "8:service_install.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_96E33C4C181746C2A8BE53A68C092495"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\service.bat"
             "TargetName" = "8:service.bat"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
@@ -2250,46 +2276,6 @@
             {
             "SourcePath" = "8:..\\..\\ETWService\\icon.png"
             "TargetName" = "8:icon.png"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9A75EDBDA86A460CA3FC524D2C4D7BE0"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.pdb"
-            "TargetName" = "8:ETWService.pdb"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9BAB2303105A46148DB3D1494FB7B132"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.application"
-            "TargetName" = "8:ETWService.application"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -2368,6 +2354,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AF951F7F564D44EE9FFCDB611582B4A5"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\icon.ico"
+            "TargetName" = "8:icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B073059820F04C5394DA686E36C41F78"
             {
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\amd64\\msdia140.dll"
@@ -2403,6 +2409,26 @@
                 }
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\OSExtensions.dll"
             "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B593EE39BF67410989CA5BF0CB7714C8"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\packages.config"
+            "TargetName" = "8:packages.config"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -2563,6 +2589,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CCD78098E1FA4A4385A01283A9180AF8"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\rules.xml"
+            "TargetName" = "8:rules.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D06D4320FD28B526E3D0D52BE278FDCA"
             {
             "AssemblyRegister" = "3:1"
@@ -2640,6 +2686,26 @@
                 }
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\System.Runtime.CompilerServices.Unsafe.dll"
             "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DA23CC52D47C479C91BA6ACFBC7F5A52"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\Program.cs"
+            "TargetName" = "8:Program.cs"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -2758,6 +2824,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FD0D8C32B5E440969D7241F1B2253ED2"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\icon.png"
+            "TargetName" = "8:icon.png"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -2837,7 +2923,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ETWMonitor Agent"
         "ProductCode" = "8:{83945FF1-0C06-401D-A816-CD981997771E}"
-        "PackageCode" = "8:{A9CB6520-AB1D-4CE7-83EF-E3300B4EEE3D}"
+        "PackageCode" = "8:{029EEB60-810E-459F-9DC0-15194A0DD665}"
         "UpgradeCode" = "8:{AB562A65-F300-47E4-B0D4-97A7FAC4ADD6}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -3356,34 +3442,6 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_7A120AB9D80A456F86D361010C5ACE66"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:ReferenceCopyLocalPaths"
-            "OutputProjectGuid" = "8:{14030926-E225-4E15-9EEB-04D4FB7E35F6}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
         }
     }
 }

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	
+	<providers>
+		<guid>{d48ce617-33a2-4bc3-a5c7-11aa4f29619e}</guid>
+		<guid>{1139c61b-b549-4251-8ed3-27250a1edec8}</guid>
+		<guid>{a7975c8f-ac13-49f1-87da-5a984a4ab417}</guid>
+	</providers>
+
+	<detections>
+		<detected-rdp>
+			<match>
+				<string>microsoft-windows-remotedesktopservices-rdpcorets" formattedmessage="le serveur a accepté une nouvelle connexion tcp du client</string>
+			</match>
+			<alert>RDP connection attempt detected</alert>
+			<score>0</score>
+		</detected-rdp>
+
+
+		<detected-smb-0>
+			<match>
+				<string>smb2connectionaccept/démarrer</string>
+			</match>
+			<alert>SMB connection attempt detected</alert>
+			<score>0</score>
+		</detected-smb-0>
+		<detected-smb-1>
+			<match>
+				<string>smb2sessionauthenticated</string>
+			</match>
+			<alert>Active SMB connection detected</alert>
+			<score>0</score>
+		</detected-smb-1>
+
+
+		<detected-winrm-0>
+			<match>
+				<string>microsoft-windows-winrm</string>
+				<string>réponse HTTP 401 au client et déconnexion de la connexion</string>
+			</match>
+			<alert>Tentative de connexion WinRM détectée</alert>
+			<score>0</score>
+		</detected-winrm-0>
+		<detected-winrm-1>
+			<match>
+				<string>microsoft-windows-winrm</string>
+				<string>création</string>
+				<string>interpréteur de commande wsman sur le serveur</string>
+			</match>
+			<alert>Active WinRM connection detected</alert>
+			<score>3</score>
+		</detected-winrm-1>
+
+
+		<detected-rpc-0>
+			<match>
+				<string>smb2requesttreeconnect</string>
+				<string>ipc$</string>
+			</match>
+			<alert>RPC enumeration attempt detected</alert>
+			<score>0</score>
+		</detected-rpc-0>
+		<detected-rpc-1>
+			<match>
+				<string>smb2requestcreate</string>
+				<string>lsarpc</string>
+			</match>
+			<alert>RPC connection to LSA process\nPotential credentials attack detected</alert>
+			<score>5</score>
+		</detected-rpc-1>
+		<detected-rpc-2>
+			<match>
+				<string>smb2requestcreate</string>
+				<string>spoolss</string>
+			</match>
+			<alert>RPC connection to print spooler</alert>
+			<score>0</score>
+		</detected-rpc-2>
+
+
+		<detected-psexec>
+			<match>
+				<string>smb2requestcreate</string>
+				<string>svcctl</string>
+			</match>
+			<alert>RPC connection to service manager\nPotential PSEXEC attack detected</alert>
+			<score>5</score>
+		</detected-psexec>
+		<detected-atexec>
+			<match>
+				<string>smb2requestcreate</string>
+				<string>atsvc</string>
+			</match>
+			<alert>RPC connection to scheduled task manager\nPotential ATEXEC attack detected</alert>
+			<score>5</score>
+		</detected-atexec>
+	</detections>
+</root>

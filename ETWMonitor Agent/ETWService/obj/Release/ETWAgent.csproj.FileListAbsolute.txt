@@ -46,6 +46,7 @@ C:\Users\Processus\Documents\ETWService\ETWService\obj\Release\ETWService.applic
 C:\Users\Processus\Documents\ETWService\ETWService\obj\Release\ETWAgent.csproj.CopyComplete
 C:\Users\Processus\Documents\ETWService\ETWService\obj\Release\ETWService.exe
 C:\Users\Processus\Documents\ETWService\ETWService\obj\Release\ETWService.pdb
+C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\OSExtensions.dll
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\x86\KernelTraceControl.dll
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\x86\KernelTraceControl.Win61.dll
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\x86\msdia140.dll
@@ -63,7 +64,6 @@ C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\R
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\arm64\vcruntime140_1.dll
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\TraceReloggerLib.dll
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\Dia2Lib.dll
-C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\OSExtensions.dll
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\ETWService.exe.config
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\ETWService.exe.manifest
 C:\Users\Processus\Documents\GitHub\ETWMonitor\ETWMonitor Agent\ETWService\bin\Release\ETWService.application
