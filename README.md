@@ -59,4 +59,11 @@ Also see installations instructions here : <a href="https://github.com/Processus
 - Include more protocols detections<br />
 - Build a Client-Server version with Agents and a collector server (⭐ DONE !!!)<br />
 - Client updates detection rules defined on server side (⭐ DONE !!!)<br />
-<br /><br /><br /><br />
+<br /><br />
+
+## Maintainability
+<br />
+Desktop version is no more maintained.<br />
+Only client-version will be maintained to get faster updates.<br />
+You can still add Agent version updates to Desktop version manually if needed.<br />
+<br />
