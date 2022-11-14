@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+	
 	<providers>
 		<guid>{d48ce617-33a2-4bc3-a5c7-11aa4f29619e}</guid>
 		<guid>{1139c61b-b549-4251-8ed3-27250a1edec8}</guid>
 		<guid>{a7975c8f-ac13-49f1-87da-5a984a4ab417}</guid>
 	</providers>
+
 	<detections>
 		<detected-rdp>
 			<match>

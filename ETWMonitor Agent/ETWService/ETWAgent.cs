@@ -177,6 +177,10 @@ namespace ETWService
                             if (i == 0)
                             {
                                 alert_msg = item.ToString();
+                                if (alert_msg.ToLower().Contains("\\n"))
+                                {
+                                    alert_msg.Replace("\\n", "\n");
+                                }
                             }
                             else if (i == 1)
                             {
@@ -236,7 +240,6 @@ namespace ETWService
                         }
                     }
                 };
-
                 this.session.Source.Process();
             }
         }
@@ -254,6 +257,9 @@ namespace ETWService
             }
             return true;
         }
+
+
+
 
 
         public async void checkUpdate()

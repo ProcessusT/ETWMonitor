@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ETWService.exe" size="274416">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ETWService.exe" size="274928">
       <assemblyIdentity name="ETWService" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GvKbMsm0z3Q5FrtCbM++DkJMuutx3b8shjO28+wzMxM=</dsig:DigestValue>
+        <dsig:DigestValue>egAnJvmJofX32P6A7SzeksXBhmj1f4yIAEuxKcVvQ0k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
