@@ -57,6 +57,7 @@ Also see installations instructions here : <a href="https://github.com/Processus
 
 <br />
 - Include more protocols detections<br />
+- Make statistics work in server dashboard<br />
 - Build a Client-Server version with Agents and a collector server (⭐ DONE !!!)<br />
 - Client updates detection rules defined on server side (⭐ DONE !!!)<br />
 <br /><br />
