@@ -37,25 +37,6 @@ namespace ETWService
         {
             try
             {   
-                if( this.token == "" || this.server_ip == "")
-                {
-                    string settings = "";
-                    foreach (string line in System.IO.File.ReadLines(directory + "\\settings.conf"))
-                    {
-                        settings += line;
-                    }
-                    int server_ip_index = settings.ToString().IndexOf("SERVER_IP=") + 10;
-                    string server_ip = settings.ToString().Substring(server_ip_index);
-                    int server_ip_end_index = server_ip.ToString().IndexOf(";");
-                    server_ip = server_ip.ToString().Substring(0, server_ip_end_index).Trim();
-                    int token_index = settings.ToString().IndexOf("TOKEN=") + 6;
-                    string token = settings.ToString().Substring(token_index);
-                    int token_end_index = token.ToString().IndexOf(";");
-                    token = token.ToString().Substring(0, token_end_index).Trim();
-                    this.token = token;
-                    this.server_ip = server_ip;
-                }                
-
                 var values = new Dictionary<string, string>
                 {
                     { "hostname", System.Convert.ToBase64String( System.Text.Encoding.UTF8.GetBytes(hostname) ) },
@@ -177,10 +158,6 @@ namespace ETWService
                             if (i == 0)
                             {
                                 alert_msg = item.ToString();
-                                if (alert_msg.ToLower().Contains("\\n"))
-                                {
-                                    alert_msg.Replace("\\n", "\n");
-                                }
                             }
                             else if (i == 1)
                             {
@@ -191,42 +168,114 @@ namespace ETWService
                                 if (data.ToString().ToLower().Contains(item.ToString().ToLower()))
                                 {
                                     sendAlert++;
-                                    // catch username or ip address
-                                    if(data.ToString().ToLower().Contains("clientip: "))
+                                    // catch infos
+                                    
+
+                                    if (data.ToString().ToLower().Contains("filename=\"users") && sendAlert < 4)
                                     {
-                                        int client_name = data.ToString().IndexOf("clientIP: ") + 10;
-                                        string ip_source = data.ToString().Substring(client_name);
-                                        int client_name_length = ip_source.ToString().IndexOf(")");
-                                        ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
-                                        int username = data.ToString().IndexOf("PowerShell (") + 12;
-                                        string sub_username = data.ToString().Substring(username);
-                                        int username_length = sub_username.ToString().IndexOf(" ");
-                                        sub_username = sub_username.ToString().Substring(0, username_length).Trim();
-                                        alert_msg = alert_msg + "\nFrom : " + ip_source + "\nUsername: " + sub_username;
+                                        try
+                                        {
+                                            int username = data.ToString().ToLower().IndexOf("filename=\"users") + 10;
+                                            string username_smbclient = data.ToString().Substring(username);
+                                            int username_smbclient_length = username_smbclient.ToString().ToLower().IndexOf("\" createcontextscount");
+                                            username_smbclient = username_smbclient.ToString().Substring(0, username_smbclient_length).Trim();
+                                            alert_msg = alert_msg + "\nCredentials folder : " + username_smbclient;
+                                        }
+                                        catch
+                                        {
+                                            continue;
+                                        }
                                     }
-                                    if (data.ToString().ToLower().Contains("clientip=\""))
+                                    if (data.ToString().ToLower().Contains("utilisateur = ") && sendAlert < 4)
                                     {
-                                        int client_name = data.ToString().IndexOf("ClientIP=\"") + 10;
-                                        string ip_source = data.ToString().Substring(client_name);
-                                        int client_name_length = ip_source.ToString().IndexOf(":");
-                                        ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
-                                        alert_msg = alert_msg + "\nFrom : " + ip_source;
+                                        try
+                                        {
+                                            int username = data.ToString().IndexOf("Utilisateur = ") + 14;
+                                            string username_powershell = data.ToString().Substring(username);
+                                            int username_powershell_length = username_powershell.ToString().IndexOf("Utilisateur");
+                                            username_powershell = username_powershell.ToString().Substring(0, username_powershell_length).Trim();
+                                            alert_msg = alert_msg + "\nby User : " + username_powershell;
+                                        }
+                                        catch
+                                        {
+                                            continue;
+                                        }
                                     }
-                                    if (data.ToString().ToLower().Contains("address=\""))
+                                    if (data.ToString().ToLower().Contains("build_report\" name=\"") && sendAlert<4)
                                     {
-                                        int client_name = data.ToString().IndexOf("Address=\"") + 9;
-                                        string ip_source = data.ToString().Substring(client_name);
-                                        int client_name_length = ip_source.ToString().IndexOf(":");
-                                        ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
-                                        alert_msg = alert_msg + "\nFrom : " + ip_source;
+                                        try
+                                        {
+                                            int filedetect = data.ToString().IndexOf("build_report\" Name=\"") + 20;
+                                            string filename_defender = data.ToString().Substring(filedetect);
+                                            int filename_defender_length = filename_defender.ToString().IndexOf("\"");
+                                            filename_defender = filename_defender.ToString().Substring(0, filename_defender_length).Trim();
+                                            alert_msg = alert_msg + "\nFile : " + filename_defender;
+                                        }
+                                        catch
+                                        {
+                                            continue;
+                                        }
                                     }
-                                    if (data.ToString().ToLower().Contains("username=\""))
+                                    if (data.ToString().ToLower().Contains("clientip: ") && sendAlert < 4)
                                     {
-                                        int client_name = data.ToString().IndexOf("UserName=\"") + 10;
-                                        string ip_source = data.ToString().Substring(client_name);
-                                        int client_name_length = ip_source.ToString().IndexOf("\"");
-                                        ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
-                                        alert_msg = alert_msg + "\nUsername : " + ip_source;
+                                        try
+                                        {
+                                            int client_name = data.ToString().IndexOf("clientIP: ") + 10;
+                                            string ip_source = data.ToString().Substring(client_name);
+                                            int client_name_length = ip_source.ToString().IndexOf(")");
+                                            ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
+                                            int username = data.ToString().IndexOf("PowerShell (") + 12;
+                                            string sub_username = data.ToString().Substring(username);
+                                            int username_length = sub_username.ToString().IndexOf(" ");
+                                            sub_username = sub_username.ToString().Substring(0, username_length).Trim();
+                                            alert_msg = alert_msg + "\nFrom : " + ip_source + "\nUsername: " + sub_username;
+                                        }
+                                        catch
+                                        {
+                                            continue;
+                                        }
+                                    }
+                                    if (data.ToString().ToLower().Contains("clientip=\"") && sendAlert < 4)
+                                    {
+                                        try{
+                                            int client_name = data.ToString().IndexOf("ClientIP=\"") + 10;
+                                            string ip_source = data.ToString().Substring(client_name);
+                                            int client_name_length = ip_source.ToString().IndexOf(":");
+                                            ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
+                                            alert_msg = alert_msg + "\nFrom : " + ip_source;
+                                        }
+                                        catch
+                                        {
+                                            continue;
+                                        }
+                                    }
+                                    if (data.ToString().ToLower().Contains("address=\"") && sendAlert < 4)
+                                    {
+                                        try { 
+                                            int client_name = data.ToString().IndexOf("Address=\"") + 9;
+                                            string ip_source = data.ToString().Substring(client_name);
+                                            int client_name_length = ip_source.ToString().IndexOf(":");
+                                            ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
+                                            alert_msg = alert_msg + "\nFrom : " + ip_source;
+                                        }
+                                        catch
+                                        {
+                                            continue;
+                                        }
+                                    }
+                                    if (data.ToString().ToLower().Contains("username=\"") && sendAlert < 4)
+                                    {
+                                        try{
+                                            int client_name = data.ToString().IndexOf("UserName=\"") + 10;
+                                            string ip_source = data.ToString().Substring(client_name);
+                                            int client_name_length = ip_source.ToString().IndexOf("\"");
+                                            ip_source = ip_source.ToString().Substring(0, client_name_length).Trim();
+                                            alert_msg = alert_msg + "\nUsername : " + ip_source;
+                                        }
+                                        catch
+                                        {
+                                            continue;
+                                        }
                                     }
                                 }
                             }
@@ -323,9 +372,43 @@ namespace ETWService
             int imagepath_length = imagepath.ToString().LastIndexOf("\\");
             this.directory = imagepath.ToString().Substring(0, imagepath_length).Trim();
 
+            // get config from settings.conf
+            while (this.token == "" || this.server_ip == "")
+            {
+                try
+                {
+                    string settings = "";
+                    foreach (string line in System.IO.File.ReadLines(directory + "\\settings.conf"))
+                    {
+                        settings += line;
+                    }
+                    int server_ip_index = settings.ToString().IndexOf("SERVER_IP=") + 10;
+                    string server_ip = settings.ToString().Substring(server_ip_index);
+                    int server_ip_end_index = server_ip.ToString().IndexOf(";");
+                    server_ip = server_ip.ToString().Substring(0, server_ip_end_index).Trim();
+                    int token_index = settings.ToString().IndexOf("TOKEN=") + 6;
+                    string token = settings.ToString().Substring(token_index);
+                    int token_end_index = token.ToString().IndexOf(";");
+                    token = token.ToString().Substring(0, token_end_index).Trim();
+                    this.token = token;
+                    this.server_ip = server_ip;
+                }
+                catch (Exception e)
+                {
+                    File.AppendAllText(directory + "\\ETW.log", "Error while trying to get settings config file : " + e.ToString() + "\n");
+                }
+                // retry in 10 seconds
+                Thread.Sleep(10000);
+            }
+
+
             this.th = new Thread(Monitor);
             this.th.IsBackground = true;
             this.th.Start();
+
+            // initial check update
+            checkUpdate();
+
 
             updateTimer = new System.Timers.Timer();
             updateTimer.Elapsed += (sender, e) =>
@@ -334,6 +417,8 @@ namespace ETWService
             };
             updateTimer.Interval = 600000; // in milliseconds = 10 min
             updateTimer.Start();
+
+            
         }
 
 

@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	
 	<providers>
 		<guid>{d48ce617-33a2-4bc3-a5c7-11aa4f29619e}</guid>
 		<guid>{1139c61b-b549-4251-8ed3-27250a1edec8}</guid>
 		<guid>{a7975c8f-ac13-49f1-87da-5a984a4ab417}</guid>
+		<guid>{0a002690-3839-4e3a-b3b6-96d8df868d99}</guid>
+		<guid>{a0c1853b-5c40-4b15-8766-3cf1c58f985a}</guid>
+		<guid>{6AD52B32-D609-4BE9-AE07-CE8DAE937E39}</guid>
 	</providers>
-
 	<detections>
+		<detected-powershell-0>
+			<match>
+				<string>Nom de commande = Import-Module</string>
+				<string>ID d'interpréteur de commandes = Microsoft.PowerShell</string>
+			</match>
+			<alert>Un module powershell a été chargé en mémoire</alert>
+			<score>4</score>
+		</detected-powershell-0>
+
+		<detected-defender-0>
+			<match>
+				<string>Microsoft-Antimalware-Engine</string>
+				<string>_report::build_report</string>
+			</match>
+			<alert>Windows Defender a détecté une menace</alert>
+			<score>5</score>
+		</detected-defender-0>
+		
 		<detected-rdp>
 			<match>
 				<string>microsoft-windows-remotedesktopservices-rdpcorets" formattedmessage="le serveur a accepté une nouvelle connexion tcp du client</string>
@@ -31,7 +50,34 @@
 			<alert>Active SMB connection detected</alert>
 			<score>0</score>
 		</detected-smb-1>
-
+		<detected-smb-2>
+			<match>
+				<string>Smb2RequestCreate</string>
+				<string>Microsoft-Windows-SMBServer</string>
+				<string>AppData\Roaming\Microsoft\Credentials\</string>
+			</match>
+			<alert>Potential credentials dumping through SMB</alert>
+			<score>4</score>
+		</detected-smb-2>
+		<detected-smb-3>
+			<match>
+				<string>Smb2RequestCreate</string>
+				<string>Microsoft-Windows-SMBServer</string>
+				<string>AppData\Local\Microsoft\Credentials\</string>
+			</match>
+			<alert>Potential credentials dumping through SMB</alert>
+			<score>4</score>
+		</detected-smb-3>
+		<detected-smb-4>
+			<match>
+				<string>Smb2RequestCreate</string>
+				<string>Microsoft-Windows-SMBServer</string>
+				<string>AppData\Roaming\Microsoft\Protect\</string>
+			</match>
+			<alert>Potential credentials dumping through SMB</alert>
+			<score>4</score>
+		</detected-smb-4>
+		
 
 		<detected-winrm-0>
 			<match>
@@ -65,7 +111,7 @@
 				<string>smb2requestcreate</string>
 				<string>lsarpc</string>
 			</match>
-			<alert>RPC connection to LSA process\nPotential credentials attack detected</alert>
+			<alert>RPC connection to LSA process - Potential credentials attack detected</alert>
 			<score>5</score>
 		</detected-rpc-1>
 		<detected-rpc-2>
@@ -76,6 +122,13 @@
 			<alert>RPC connection to print spooler</alert>
 			<score>0</score>
 		</detected-rpc-2>
+		<detected-rpc-3>
+			<match>
+				<string>c681d488-d850-11d0-8c52-00c04fd90f7e</string>
+			</match>
+			<alert>Petit Potam exploitation detected (MS-EFSRPC)</alert>
+			<score>5</score>
+		</detected-rpc-3>
 
 
 		<detected-psexec>
@@ -83,7 +136,7 @@
 				<string>smb2requestcreate</string>
 				<string>svcctl</string>
 			</match>
-			<alert>RPC connection to service manager\nPotential PSEXEC attack detected</alert>
+			<alert>RPC connection to service manager - Potential PSEXEC attack detected</alert>
 			<score>5</score>
 		</detected-psexec>
 		<detected-atexec>
@@ -91,7 +144,7 @@
 				<string>smb2requestcreate</string>
 				<string>atsvc</string>
 			</match>
-			<alert>RPC connection to scheduled task manager\nPotential ATEXEC attack detected</alert>
+			<alert>RPC connection to scheduled task manager - Potential ATEXEC attack detected</alert>
 			<score>5</score>
 		</detected-atexec>
 	</detections>
