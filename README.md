@@ -11,7 +11,7 @@
 <br />
 <br>
 <div align="center">
-  Server monitoring screen :<br />
+  Server dashboard screen :<br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server.PNG" width="80%;">
 <br /><br />
 Crowdsec integration with IP address reputation :<br />
