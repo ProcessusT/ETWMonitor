@@ -338,9 +338,6 @@ namespace ETWService
                 if (!FilesAreEqual_Hash(local_rules, server_rules))
                 {
                     // UPDATE RULES FILE : stop and restart ETW capture
-                    this.session.Source.StopProcessing();
-                    this.session.Stop();
-                    this.session.Dispose();
                     this.th.Abort();
                     this.th.Join();
                     Thread.Sleep(1000);

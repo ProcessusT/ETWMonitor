@@ -17,8 +17,6 @@
                     <a class="nav-link" href="settings.php">Server settings</a>
                 </nav>
             </div>
-            
-            
         </div>
     </div>
 </nav>

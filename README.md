@@ -7,22 +7,25 @@
   <br>
 </div>
 
-> Windows notifier tool that detects RDP, SMB, WinRM and RPC connections by monitoring ETW event logs<br />
+> Windows notifier tool that detects suspicious connections by monitoring ETW event logs<br />
 <br />
 <br>
 <div align="center">
   Server monitoring screen :<br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server.PNG" width="80%;">
-<br /><br />
-  Client Toast notification in Desktop version :<br />
-<img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/Connexion_SMB.PNG" width="80%;">
+<br />
 </div>
 <br>
 
 
 ## Changelog
 <br />
-On last version (V 2.1) :<br />
+On last version (V 2.2) :<br />
+- Crowdsec IP reputation integration (match ip in TCPIP logs)<br />
+- Alerts can be sent by email<br />
+- Statistics in server dashboard rely on real data<br />
+<br />
+V 2.1 :<br />
 - Client updates detection rules defined in a server XML file automatically<br />
 - No more compilation required for new rules creation<br />
 <br />
@@ -57,7 +60,7 @@ Also see installations instructions here : <a href="https://github.com/Processus
 
 <br />
 - Include more protocols detections<br />
-- Make statistics work in server dashboard<br />
+- Make statistics work in server dashboard (⭐ DONE !!!)<br />
 - Build a Client-Server version with Agents and a collector server (⭐ DONE !!!)<br />
 - Client updates detection rules defined on server side (⭐ DONE !!!)<br />
 <br /><br />

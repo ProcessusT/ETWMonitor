@@ -26,10 +26,20 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
+
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Settings</h1>
                         
-                        
+                        <?php
+                            if(isset($_GET['error'])){
+                                echo '<div style="color:red;font-weight:bold;font-size:25px;">Une erreur s\'est produite.</div><br />';
+                            }
+                        ?>
+
+
+
+
+                        <!-- Token settings -->
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
@@ -51,9 +61,11 @@
             $db = new PDO('sqlite:./ETWMonitor.sqlite');
             $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $req = $db->prepare('INSERT INTO settings (token) VALUES (?)');
-            $array_of_values = array($new_token);
-            $req->execute($array_of_values);
+            $req = $db->prepare('UPDATE settings SET token=:new_token');
+            $req->bindParam(':new_token',$new_token);
+            $req->execute();
+
+
         }catch (Exception $e) {
             echo '<script>
                   document.location.href="settings.php?error=1"; 
@@ -87,14 +99,197 @@
             function generate_token(){
                 document.location.href="settings.php?generate_token"; 
             }
-            </script>
         </script>';
         
 ?>
                                 </table>
                             </div>
                         </div>
-                    </div>
+
+
+
+
+
+
+
+
+                        <!-- Crowdsec integration -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                Crowdsec integration
+                            </div>
+                            <div class="card-body">
+
+                                <?php
+
+    if(isset($_POST['activation'])){
+        
+        try{
+            $active=0;
+            if($_POST['activation']=="on"){
+                $active=1;
+            }
+            $req = $db->prepare('UPDATE crowdsec SET active=:active');
+            $req->bindParam(':active',$active);
+            $req->execute();
+        }catch (Exception $e) {
+            echo '<script>
+                  document.location.href="settings.php?error=crowdsec"; 
+                </script>';
+        }
+        
+    }
+
+    $db = new PDO('sqlite:./ETWMonitor.sqlite');
+    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $db->prepare('SELECT active FROM crowdsec');
+    $stmt->execute(); 
+    $req = $stmt->fetch();
+        echo '<form method="POST" action="#"><br />
+           <label for="activation" style="margin-right:25px;">Include Crowdsec database in rules : </label>
+           <input type="checkbox" name="activation" id="activation" ';
+           if($req['active']==1){
+                echo "checked ";
+           }
+        echo '><br />
+        
+        <br />
+        <input type="submit" style="border-radius:5px;padding:10px;background:green;color:white;cursor:pointer;" value="Save changes">
+        <br /><br />
+        <span style="font-style:italic;">To include Crowdsec IP reputation in rules you need to copy regularly your sqlite crowdsec.db file (located by default in /var/lib/crowdsec/data/) in ETW Monitor server main folder (For example with a cron job).</span>
+        </form>'; 
+        
+        
+?>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                        <!-- SMTP settings -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                SMTP settings
+                            </div>
+                            <div class="card-body">
+<br />
+<?php
+
+    if(isset($_POST['smtp_host'])){
+        try{
+
+            $stmt_count = $db->prepare('SELECT count(smtp_host) as counter FROM smtp');
+            $stmt_count->execute(); 
+            $req_count = $stmt_count->fetch();
+            if($req_count['counter'] == "0"){
+                $stmt_insert = $db->prepare('insert into smtp (smtp_host) VALUES (?)');
+                $array_of_values = array('smtp host');
+                $stmt_insert->execute($array_of_values);
+            }
+
+            if($_POST['smtp_host']=="on"){
+                $smtp_auth = "true";
+            }else{
+                $smtp_auth = "false";
+            }
+            $smtp_host = strip_tags(preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['smtp_host']));
+            
+            if(is_int((int)$_POST['smtp_port'])){
+                $smtp_port = (int)$_POST['smtp_port'];
+            }else{
+                throw new Exception('SMTP port is not numeric.');
+            }
+
+            $smtp_secure = strip_tags(preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['smtp_secure']));
+            $smtp_username = strip_tags(preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['smtp_username']));
+            $smtp_password = strip_tags(preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['smtp_password']));
+            $smtp_fromEmail = strip_tags(preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['smtp_fromEmail']));
+            $smtp_toEmail = strip_tags(preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['smtp_toEmail']));
+            
+            
+            $req_update = $db->prepare('UPDATE smtp SET smtp_host=:smtp_host, smtp_port=:smtp_port, smtp_auth=:smtp_auth, smtp_secure=:smtp_secure, smtp_username=:smtp_username, smtp_password=:smtp_password, smtp_fromEmail=:smtp_fromEmail, smtp_toEmail=:smtp_toEmail WHERE "rowid" = 1');
+            $req_update->bindParam(':smtp_host',$smtp_host);
+            $req_update->bindParam(':smtp_port',$smtp_port);
+            $req_update->bindParam(':smtp_auth',$smtp_auth);
+            $req_update->bindParam(':smtp_secure',$smtp_secure);
+            $req_update->bindParam(':smtp_username',$smtp_username);
+            $req_update->bindParam(':smtp_password',$smtp_password);
+            $req_update->bindParam(':smtp_fromEmail',$smtp_fromEmail);
+            $req_update->bindParam(':smtp_toEmail',$smtp_toEmail);
+            $req_update->execute();
+
+        } catch (Exception $e) {
+            echo '<div style="color:red;font-weight:bold;font-size:25px;">Error while updating SMTP settings : '.$e->getMessage().'</div>';
+        }
+    }
+
+    $stmt_select = $db->prepare('SELECT * FROM smtp WHERE "rowid" = 1');
+    $stmt_select->execute(); 
+    $req_select = $stmt_select->fetch();
+
+echo '
+<form method="POST" action="#" id="smtp_settings">
+    <label for="smtp_host">SMTP server host : </label> <br /><input style="width:400px;border-radius:5px;padding:10px;" type="text" value="'.$req_select['smtp_host'].'" id="smtp_host" name="smtp_host"> 
+    <br /><br />
+
+    <label for="smtp_port">SMTP server port : </label> <br /><input style="width:400px;border-radius:5px;padding:10px;" type="number" value="'.$req_select['smtp_port'].'" id="smtp_port" name="smtp_port"> 
+    <br /><br />
+
+    <label for="smtp_auth">Authentication required : </label> <input style="width:400px;border-radius:5px;padding:10px;" type="checkbox" ';
+    if($req_select['smtp_auth']){
+        echo 'checked';
+    }
+    echo ' id="smtp_auth" name="smtp_auth"> 
+    <br /><br />
+
+    <label for="smtp_secure">Encryption type : (tls/ssl/none)</label> <br /><input style="width:400px;border-radius:5px;padding:10px;" type="text" value="'.$req_select['smtp_secure'].'" id="smtp_secure" name="smtp_secure"> 
+    <br /><br />
+
+    <label for="smtp_username">SMTP username : </label> <br /><input style="width:400px;border-radius:5px;padding:10px;" type="text" value="'.$req_select['smtp_username'].'" id="smtp_username" name="smtp_username"> 
+    <br /><br />
+
+    <label for="smtp_password">SMTP password : 
+    </label> <br /><input style="width:400px;border-radius:5px;padding:10px;" type="password" value="'.$req_select['smtp_password'].'" id="smtp_password" name="smtp_password"> 
+    <br />
+    To generate a gmail application password, go here : <a href="https://myaccount.google.com/u/0/apppasswords">https://myaccount.google.com/u/0/apppasswords</a>
+    <br /><br />
+
+    <label for="smtp_fromEmail">Sender name : </label> <br /><input style="width:400px;border-radius:5px;padding:10px;" type="text" value="'.$req_select['smtp_fromEmail'].'" id="smtp_fromEmail" name="smtp_fromEmail"> 
+    <br /><br />
+
+    <label for="smtp_toEmail">Recipient email : </label><br /> <input style="width:400px;border-radius:5px;padding:10px;" type="text" value="'.$req_select['smtp_toEmail'].'" id="smtp_toEmail" name="smtp_toEmail"> 
+    <br /><br />
+
+    <input style="border-radius:5px;padding:10px;background:green;color:white;cursor:pointer;" type="submit" value="Save changes"> 
+    <br /><br />
+    </form>
+
+    <script type="text/javascript">
+        function test_smtp(){
+            document.getElementById("result").style.setProperty("visibility", "visible");
+            document.getElementById("result").style.setProperty("display", "block");
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "test_alert.php", false);
+            xhttp.send();
+            document.getElementById("result").innerHTML = xhttp.responseText;
+        }  
+    </script>
+    <button style="color:white;padding:10px;background-color:rgb(0,0,180);border-radius:5px;" onclick="test_smtp()" id="test_smtp">Test SMTP connection</button>
+    <br /><br />
+    <div id="result" style="visibility:hidden;display:none;"><img width="200px" src="assets/img/loading.gif"></div>
+';
+?>
+
+                           </div>
+                        </div>
+                    </div> 
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">

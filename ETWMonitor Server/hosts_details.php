@@ -45,8 +45,8 @@
 
     if(isset($_POST['hostname'])){
         try{
-            $hostname = preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',base64_decode($_POST['hostname']));
-            $details = preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['details']);
+            $hostname = strip_tags( preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',base64_decode($_POST['hostname'])));
+            $details = strip_tags( preg_replace("/[^a-zA-Z0-9éèà!:,.; ][\n\r]+/", '',$_POST['details']));
             $stmt = $db->prepare('SELECT hostname, details FROM host where hostname="'.$hostname.'"');
             $stmt->execute(); 
             $req = $stmt->fetch();
