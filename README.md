@@ -7,10 +7,11 @@
   <br>
 </div>
 
-> Windows notifier tool that detects suspicious connections by monitoring ETW event logs<br />
+
+<div align="center">
+  <span style="font-size:1.5em;">Windows notifier tool that detects suspicious connections by monitoring ETW event logs</span><br />
 <br />
 <br>
-<div align="center">
   Server dashboard screen :<br /><br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server.PNG" width="80%;">
 <br /><br />
