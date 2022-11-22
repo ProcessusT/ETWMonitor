@@ -14,6 +14,7 @@
   Server monitoring screen :<br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server.PNG" width="80%;">
 <br /><br />
+Crowdsec integration with IP address reputation :<br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server2.PNG" width="80%;">
 <br />
 </div>
