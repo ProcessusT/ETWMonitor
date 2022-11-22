@@ -9,7 +9,7 @@
 
 
 <div align="center">
-## Windows notifier tool that detects suspicious connections by monitoring ETW event logs<br />
+<h2>Windows notifier tool that detects suspicious connections by monitoring ETW event logs</h2><br />
 <br />
 <br>
   Server dashboard screen :<br /><br />
