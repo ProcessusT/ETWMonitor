@@ -12,6 +12,7 @@ using System.Threading;
 using System.Xml;
 using System.Collections;
 using System.Security.Cryptography;
+using System.Text.RegularExpressions;
 
 namespace ETWService
 {
@@ -28,6 +29,9 @@ namespace ETWService
         string directory = "";
         string token = "";
         string server_ip = "";
+        int crowdsec_integration = 0;
+        ArrayList crowdsec_ip_adresses_list = new ArrayList();
+        ArrayList whitelisted_ip_adresses = new ArrayList();
         private static System.Timers.Timer updateTimer;
         public Thread th;
         public TraceEventSession session;
@@ -117,7 +121,23 @@ namespace ETWService
                         }
                         var temp_alert = alert.ToArray();
                         alerts_list.Add(temp_alert);
+                        
                     }
+                }
+
+                // crowdsec integration
+                XmlNodeList crowdsec_ip_adresses = rules.GetElementsByTagName("crowdsec");
+                foreach (XmlNode ip_address in crowdsec_ip_adresses)
+                {
+                    foreach (XmlNode ip in ip_address.ChildNodes)
+                    {
+                        crowdsec_integration = 1;
+                        crowdsec_ip_adresses_list.Add(ip.InnerText.Trim());
+                    }
+                }
+                if(crowdsec_integration == 1)
+                {
+                    File.AppendAllText(directory + "\\ETW.log", "Crowdsec integration is activated\n");
                 }
             }
             catch (Exception e)
@@ -126,8 +146,8 @@ namespace ETWService
             }
 
 
-            
 
+            File.AppendAllText(directory + "\\ETW.log", "Starting ETW session...\n");
 
             var existingSessions = TraceEventSession.GetActiveSessionNames();
             var sessionName = "ETWMonitor";
@@ -137,13 +157,42 @@ namespace ETWService
                 foreach(string provider in providers_list)
                 {
                     session.EnableProvider(new Guid(provider));
+                    File.AppendAllText(directory + "\\ETW.log", "Enable new guid provider : " + provider.ToString() + "\n");
                 }
+
+                File.AppendAllText(directory + "\\ETW.log", "Starting reading ETW...\n");
                 session.Source.Dynamic.All += delegate (TraceEvent data)
                 {
-                    /*FOR DEBUGGING
-                    if (data.ToString().ToLower().Contains("ATTACKER IP")){
-                        Console.WriteLine(data.ToString());
-                    }*/
+                    
+
+                    
+                    
+                    
+                    // match crowdsec rules
+                    if (crowdsec_integration == 1)
+                    {
+                        var match = Regex.Match(data.ToString(), @"\b(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\b");
+                        if (match.Success)
+                        {
+                            string ip_string = match.Captures[0].ToString();
+
+                            if (!whitelisted_ip_adresses.Contains(ip_string))
+                            {
+                                if (crowdsec_ip_adresses_list.Contains(ip_string))
+                                {
+                                    Alert("IP address reported by Crowdsec detected : " + ip_string.ToString(), 5);
+                                    File.AppendAllText(directory + "\\ETW.log", "Find an ip address that match Crowdsec list : " + ip_string.ToString().ToLower() + "\n\n");
+                                }
+                                else
+                                {
+                                    whitelisted_ip_adresses.Add(ip_string);
+                                    File.AppendAllText(directory + "\\ETW.log", "New ip address add to whitelist : " + ip_string.ToString().ToLower() + "\n\n");
+                                }
+                            }
+                        }
+                    }
+
+
 
 
                     foreach (Array alert in alerts_list.ToArray())
@@ -165,6 +214,7 @@ namespace ETWService
                             }
                             else
                             {
+                                
                                 if (data.ToString().ToLower().Contains(item.ToString().ToLower()))
                                 {
                                     sendAlert++;
@@ -347,6 +397,7 @@ namespace ETWService
                     File.Move(directory + "\\server-rules.xml", directory + "\\rules.xml");
                     Alert("Rules have been updated.", 0);
                     this.th = new Thread(Monitor);
+                    this.th.Priority = ThreadPriority.Lowest;
                     this.th.IsBackground = true;
                     this.th.Start();
                 }
@@ -400,6 +451,7 @@ namespace ETWService
 
 
             this.th = new Thread(Monitor);
+            this.th.Priority = ThreadPriority.Lowest;
             this.th.IsBackground = true;
             this.th.Start();
 

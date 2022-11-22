@@ -51,12 +51,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_10C477134DF64D5D8574CFF5684F8E86"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_14F62F71EAB74B64936572CF2AC893D4"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -117,7 +111,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_1CDFA1D7EE1E4398A313C27483349024"
+        "MsmKey" = "8:_207F2A399F414F7F89759A42D79B5534"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -231,6 +225,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_33803EC213E345DF83C1119CA2E58DAF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_37E4572925704160940F30714704556B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -250,12 +250,6 @@
         "Entry"
         {
         "MsmKey" = "8:_42F01D5D4A1B4162826BAD1F06DEDB03"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_50268038A5034F84A0BE897F3064715C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -393,6 +387,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_8A316F43118E4805A4C31A9504E5A542"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8F2D60B300474B3CB982AD20E802B086"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -477,12 +477,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_C151EF1895444EDDB0007C91E6A032B0"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_C76EB45D2B1445DBB86F984EC8C76F5E"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -520,7 +514,7 @@
         "Entry"
         {
         "MsmKey" = "8:_D06D4320FD28B526E3D0D52BE278FDCA"
-        "OwnerKey" = "8:_C151EF1895444EDDB0007C91E6A032B0"
+        "OwnerKey" = "8:_207F2A399F414F7F89759A42D79B5534"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -573,6 +567,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_FEC3747FC87B4F26944F9DB39069EBD8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_2C5A1FAE8B2895D0208A53193ACFA93E"
         "MsmSig" = "8:_UNDEFINED"
@@ -580,7 +580,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C151EF1895444EDDB0007C91E6A032B0"
+        "OwnerKey" = "8:_207F2A399F414F7F89759A42D79B5534"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1098,26 +1098,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_10C477134DF64D5D8574CFF5684F8E86"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.application"
-            "TargetName" = "8:ETWService.application"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_14F62F71EAB74B64936572CF2AC893D4"
             {
             "AssemblyRegister" = "3:1"
@@ -1242,10 +1222,21 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1CDFA1D7EE1E4398A313C27483349024"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_207F2A399F414F7F89759A42D79B5534"
             {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.pdb"
-            "TargetName" = "8:ETWService.pdb"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ETWService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_207F2A399F414F7F89759A42D79B5534"
+                    {
+                    "Name" = "8:ETWService.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.exe"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -1499,6 +1490,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_33803EC213E345DF83C1119CA2E58DAF"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.application"
+            "TargetName" = "8:ETWService.application"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_37E4572925704160940F30714704556B"
             {
             "AssemblyRegister" = "3:1"
@@ -1585,26 +1596,6 @@
             {
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\rules.xml"
             "TargetName" = "8:rules.xml"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_50268038A5034F84A0BE897F3064715C"
-            {
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.exe.manifest"
-            "TargetName" = "8:ETWService.exe.manifest"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"
@@ -2040,6 +2031,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8A316F43118E4805A4C31A9504E5A542"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.exe.manifest"
+            "TargetName" = "8:ETWService.exe.manifest"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8F2D60B300474B3CB982AD20E802B086"
             {
             "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\service.bat"
@@ -2386,37 +2397,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C151EF1895444EDDB0007C91E6A032B0"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ETWService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_C151EF1895444EDDB0007C91E6A032B0"
-                    {
-                    "Name" = "8:ETWService.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C76EB45D2B1445DBB86F984EC8C76F5E"
             {
             "AssemblyRegister" = "3:1"
@@ -2718,6 +2698,26 @@
             {
             "SourcePath" = "8:..\\..\\ETWService\\icon.png"
             "TargetName" = "8:icon.png"
+            "Tag" = "8:"
+            "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FEC3747FC87B4F26944F9DB39069EBD8"
+            {
+            "SourcePath" = "8:..\\..\\ETWService\\bin\\Release\\ETWService.pdb"
+            "TargetName" = "8:ETWService.pdb"
             "Tag" = "8:"
             "Folder" = "8:_9A4BF1A6C0A841EE8B06CE78823A2F9E"
             "Condition" = "8:"

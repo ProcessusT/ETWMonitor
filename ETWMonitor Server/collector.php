@@ -96,23 +96,16 @@ use PHPMailer\PHPMailer\Exception;
 
 			    		// TCPIP UUID is {2f07e2ee-15db-40f1-90ef-9d7ba282188a}
 			    		// if guid is not present, just add it
-			    		$rules_beginning = explode("<detections>", $rules_content)[0]."<detections>";
 			    		if( stripos($rules_beginning, "{2f07e2ee-15db-40f1-90ef-9d7ba282188a}")==0){
 			    			$rules_beginning_first_index = stripos($rules_beginning, "</guid>");
 			    			$new_rules_beginning = substr($rules_beginning, 0, $rules_beginning_first_index) . "</guid>
 			    			<guid>{2f07e2ee-15db-40f1-90ef-9d7ba282188a}" . substr($rules_beginning, $rules_beginning_first_index);
 			    			$rules_beginning = $new_rules_beginning;
 			    		}
-			    		if( stripos($rules_content, "<detected-crowsec")>0){
-							$rules_end = @end(explode("<detected-crowsec", $rules_content));
-							$rules_end = explode("</detected-crowsec", $rules_end)[1];
-							$rules_end = substr($rules_end, stripos($rules_end, "<detected"));
-			    		}else{
-			    			$rules_end = substr($rules_content, stripos($rules_content, "<detected"));
-			    		}
+			    		$rules_beginning = explode("</detections>", $rules_content)[0]."</detections>
+			    		<crowdsec>";
 			    		
-
-			    		$rules_middle = "";
+			    		$rules_end = "";
 			    		if(file_exists("crowdsec.db")){
 			    			$crowdsec_db = new PDO('sqlite:./crowdsec.db');
 			    			$crowdsec_db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -121,19 +114,15 @@ use PHPMailer\PHPMailer\Exception;
 						    $stmt_crowdsec->execute(); 
 						    $i=0;
 						    while( $req_crowdsec = $stmt_crowdsec->fetch() ){
-						    	$rules_middle .= '
-<detected-crowsec-'.$i.'>
-	<match>
-		<string>'.$req_crowdsec['ipaddress'].'</string>
-	</match>
-	<alert>Communication with bad IP address reported by Crowdsec detected : '.$req_crowdsec['ipaddress'].'</alert>
-	<score>5</score>
-</detected-crowsec-'.$i.'>
+						    	$rules_end .= '
+<crowdsec-'.$i.'>
+'.$req_crowdsec['ipaddress'].'
+</crowdsec-'.$i.'>
 													';
 								$i++;
 						    }
 
-						    $new_rules = $rules_beginning . $rules_middle . $rules_end;
+						    $new_rules = $rules_beginning . $rules_end . "</crowdsec></root>";
 						    $rules_file = fopen("rules.xml", "w+") or die("Unable to open file!");
 				    		fwrite($rules_file, $new_rules);
 				    		fclose($rules_file);
@@ -145,7 +134,8 @@ use PHPMailer\PHPMailer\Exception;
 			    	}
 			    }
 		    } catch(Exception $e) {
-			    pass;			}
+			    pass;			
+			}
 			
 
 

@@ -13,6 +13,8 @@
 <div align="center">
   Server monitoring screen :<br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server.PNG" width="80%;">
+<br /><br />
+<img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server2.PNG" width="80%;">
 <br />
 </div>
 <br>
@@ -20,10 +22,11 @@
 
 ## Changelog
 <br />
-On last version (V 2.2) :<br />
+On last version (V 2.3) :<br />
 - Crowdsec IP reputation integration (match ip in TCPIP logs)<br />
 - Alerts can be sent by email<br />
 - Statistics in server dashboard rely on real data<br />
+- Correction of bug that keeps CPU usage over 90%<br />
 <br />
 V 2.1 :<br />
 - Client updates detection rules defined in a server XML file automatically<br />
@@ -52,7 +55,7 @@ ETWMonitor monitors events in real time to detect suspicious network connections
 ## Installation
 <br>
 - You can download latest compiled version from <a href="https://github.com/Processus-Thief/ETWMonitor/releases">Release page</a><br />
-Also see installations instructions here : <a href="https://github.com/Processus-Thief/ETWMonitor/blob/main/INSTALLATION%20-%20HOW%20TO.pdf">INSTALLATION HOW TO.pdf</a>
+Also see installations instructions here : <a href="https://github.com/Processus-Thief/ETWMonitor/blob/main/ETW%20Monitor%20-%20How%20to%20install%20client-server%20version.pdf">INSTALLATION HOW TO.pdf</a>
 <br><br>
 <br>
     
