@@ -8,9 +8,26 @@
 		<guid>{a0c1853b-5c40-4b15-8766-3cf1c58f985a}</guid>
 		<guid>{6AD52B32-D609-4BE9-AE07-CE8DAE937E39}</guid>
 		<guid>{1c95126e-7eea-49a9-a3fe-a378b03ddb4d}</guid>
+		<guid>{22fb2cd6-0e7b-422b-a0c7-2fad1fd0e716}</guid>
 	</providers>
+
+	<loaded-images>
+		<detected-mimikatz-0>
+			<match>
+				<string>sspicli.dll</string>
+				<string>cryptdll.dll</string>
+				<string>cryptbase.dll</string>
+				<string>bcrypt.dll</string>
+				<string>wldap32.dll</string>
+			</match>
+			<alert>Chargement en mémoire de DLL suspectes (!~Mimikatz)</alert>
+			<score>5</score>
+		</detected-mimikatz-0>
+	</loaded-images>
+
+
 	<detections>
-<detected-dns-0>
+		<detected-dns-0>
 			<match>
 				<string>Microsoft-Windows-DNS-Client</string>
 				<string>QueryName="pastebin.fr"</string>

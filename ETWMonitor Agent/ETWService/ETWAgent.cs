@@ -2,17 +2,18 @@
 using Microsoft.Diagnostics.Tracing.Session;
 using Microsoft.Win32;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Security.Cryptography;
 using System.ServiceProcess;
-using System.Timers;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Xml;
-using System.Collections;
-using System.Security.Cryptography;
-using System.Text.RegularExpressions;
 
 namespace ETWService
 {
@@ -72,6 +73,8 @@ namespace ETWService
             }
             ArrayList providers_list = new ArrayList();
             ArrayList alerts_list = new ArrayList();
+            ArrayList images_list = new ArrayList();
+            var process_loaded_dll = new Dictionary<string, List<string>>();
 
             try
             {
@@ -125,6 +128,31 @@ namespace ETWService
                     }
                 }
 
+                // get all loaded images 
+                XmlNodeList loaded_images = rules.GetElementsByTagName("loaded-images");
+                foreach (XmlNode image_rule in loaded_images)
+                {
+                    foreach (XmlNode rule_name in image_rule.ChildNodes)
+                    {
+                        var image_matches = rules.SelectNodes(@"//" + rule_name.Name + "/match/string");
+                        string image_string = rules.SelectSingleNode(@"//" + rule_name.Name + "/alert").InnerText;
+                        string image_score = rules.SelectSingleNode(@"//" + rule_name.Name + "/score").InnerText;
+                        ArrayList image_alert = new ArrayList()
+                        {
+                            image_string, image_score
+                        };
+
+                        foreach (XmlNode item in image_matches)
+                        {
+                            image_alert.Add(item.InnerText);
+                        }
+                        var temp_alert = image_alert.ToArray();
+                        images_list.Add(temp_alert);
+
+                    }
+                }
+
+
                 // crowdsec integration
                 XmlNodeList crowdsec_ip_adresses = rules.GetElementsByTagName("crowdsec");
                 foreach (XmlNode ip_address in crowdsec_ip_adresses)
@@ -163,12 +191,115 @@ namespace ETWService
                 File.AppendAllText(directory + "\\ETW.log", "Starting reading ETW...\n");
                 session.Source.Dynamic.All += delegate (TraceEvent data)
                 {
-                    
 
-                    
-                    
-                    
-                    // match crowdsec rules
+
+                    // Loaded images rules
+                    if (data.ToString().ToLower().Contains("eventname=\"imageload"))
+                    {
+                        try
+                        {
+                            int pid = data.ToString().ToLower().IndexOf("pid=\"") + 5;
+                            string threadID = data.ToString().Substring(pid);
+                            int threadID_length = threadID.ToString().ToLower().IndexOf("\"");
+                            threadID = threadID.ToString().Substring(0, threadID_length).Trim();
+
+                            int imagename = data.ToString().ToLower().IndexOf("imagename=\"") + 11;
+                            string dll_name = data.ToString().Substring(imagename);
+                            int dll_name_length = dll_name.ToString().ToLower().IndexOf("\"");
+                            dll_name = dll_name.ToString().Substring(0, dll_name_length).Trim();
+
+                            Process proc = Process.GetProcessById(Int32.Parse(threadID));
+
+                            File.AppendAllText(directory + "\\ETW.log", "proc analysé : " +proc.ProcessName.ToString()+ "\n");
+
+                            if (!process_loaded_dll.Keys.Contains(proc.ProcessName))
+                            {
+                                process_loaded_dll.Add(proc.ProcessName, new List<string> { });
+                            }
+
+                            foreach (var process in process_loaded_dll)
+                            {
+                                try
+                                {
+                                    if (proc.ProcessName == process.Key)
+                                    {
+                                        if (!process.Value.Contains(dll_name.ToLower()))
+                                        {
+                                            process.Value.Add(dll_name.ToLower());
+                                        }
+                                        foreach (Array image_dll_rule in images_list.ToArray())
+                                        {
+                                            int i = 0;
+                                            List<string> matches = new List<string>();
+                                            string image_string = "";
+                                            int image_score = 0;
+                                            int nb_matches = -2;
+                                            foreach (string item in image_dll_rule)
+                                            {
+                                                if (i == 0)
+                                                {
+                                                    image_string = item.ToString();
+                                                }
+                                                else if (i == 1)
+                                                {
+                                                    try
+                                                    {
+                                                        image_score = int.Parse(item);
+                                                    }catch(Exception ex)
+                                                    {
+                                                        image_score = 0;
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    matches.Add(item);
+                                                }
+                                                nb_matches = nb_matches + 1;
+                                                i = i + 1;
+                                            }
+                                            int nb_bad_dll = 0;
+                                            foreach (string dll in process.Value)
+                                            {
+                                                foreach (var bad_dll in matches)
+                                                {
+                                                    if (dll.ToLower().Contains(bad_dll.ToLower()))
+                                                    {
+                                                        nb_bad_dll = nb_bad_dll + 1;
+                                                    }
+                                                }
+                                            }
+                                            if (nb_bad_dll >= nb_matches)
+                                            {
+                                                Alert(image_string, image_score);
+                                                /*
+                                                // If you have balls, you can kill it 
+                                                proc.Kill();
+                                                proc.Close();
+                                                proc.Dispose();
+                                                */
+                                            }
+                                        }
+                                    }
+                                }
+                                catch (Exception e)
+                                {
+                                    continue;
+                                }
+                            }
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("error in loaded images");
+                        }
+                    }
+
+
+
+
+
+
+
+                    // Crowdsec rules
                     if (crowdsec_integration == 1)
                     {
                         var match = Regex.Match(data.ToString(), @"\b(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\b");
@@ -195,6 +326,13 @@ namespace ETWService
 
 
 
+
+
+
+
+
+
+                    // detection rules
                     foreach (Array alert in alerts_list.ToArray())
                     {
                         int i = 0;

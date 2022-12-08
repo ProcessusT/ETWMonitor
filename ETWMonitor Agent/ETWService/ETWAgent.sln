@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETWAgent", "ETWAgent.csproj", "{14030926-E225-4E15-9EEB-04D4FB7E35F6}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ETWServiceSetup", "..\ETWServiceSetup\ETWServiceSetup\ETWServiceSetup.vdproj", "{69B7E873-D9B3-447B-8B48-07819FE873A0}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ETWMonitor Setup", "..\Setup\ETWMonitor Setup\ETWMonitor Setup.vdproj", "{CC13356D-1B29-4224-BF3E-96A464204BDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{14030926-E225-4E15-9EEB-04D4FB7E35F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14030926-E225-4E15-9EEB-04D4FB7E35F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14030926-E225-4E15-9EEB-04D4FB7E35F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69B7E873-D9B3-447B-8B48-07819FE873A0}.Debug|Any CPU.ActiveCfg = Debug
-		{69B7E873-D9B3-447B-8B48-07819FE873A0}.Release|Any CPU.ActiveCfg = Release
+		{CC13356D-1B29-4224-BF3E-96A464204BDD}.Debug|Any CPU.ActiveCfg = Debug
+		{CC13356D-1B29-4224-BF3E-96A464204BDD}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
