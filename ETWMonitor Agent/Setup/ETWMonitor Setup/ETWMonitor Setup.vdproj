@@ -1901,9 +1901,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:ETWMonitor"
+        "ProductName" = "8:ETWMonitor Agent"
         "ProductCode" = "8:{E1612805-45CE-478F-92ED-CC68BDD77B73}"
-        "PackageCode" = "8:{04EFC9C5-DD76-461A-9C98-3A966EF02C28}"
+        "PackageCode" = "8:{993F0D35-84BF-4168-A9C7-BDD0A65BC9DE}"
         "UpgradeCode" = "8:{450180F6-903F-4392-88DF-9FC7A46C98DA}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
