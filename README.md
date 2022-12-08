@@ -17,6 +17,9 @@
 <br /><br />
 Crowdsec integration with IP address reputation :<br /><br />
 <img src="https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server2.PNG" width="80%;">
+<br /><br />
+Suspicious loaded DLL by processes detection :<br /><br />
+<img src="[https://github.com/Processus-Thief/ETWMonitor/raw/main/assets/ETWMonitor_server2.PNG](https://raw.githubusercontent.com/Processus-Thief/ETWMonitor/main/assets/mimikatz_detection.PNG)" width="80%;">
 <br />
 </div>
 <br>
