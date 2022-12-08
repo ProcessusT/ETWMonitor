@@ -24,7 +24,10 @@ Crowdsec integration with IP address reputation :<br /><br />
 
 ## Changelog
 <br />
-On last version (V 2.3) :<br />
+Final version :<br />
+- Loaded DLL by processes detections<br />
+<br />
+V 2.3 :<br />
 - Crowdsec IP reputation integration (match ip in TCPIP logs)<br />
 - Alerts can be sent by email<br />
 - Statistics in server dashboard rely on real data<br />
@@ -64,10 +67,7 @@ Also see installations instructions here : <a href="https://github.com/Processus
 ## Future improvements
 
 <br />
-- Include more protocols detections<br />
-- Make statistics work in server dashboard (⭐ DONE !!!)<br />
-- Build a Client-Server version with Agents and a collector server (⭐ DONE !!!)<br />
-- Client updates detection rules defined on server side (⭐ DONE !!!)<br />
+No more improvements are planned for the moment.
 <br /><br />
 
 ## Maintainability
